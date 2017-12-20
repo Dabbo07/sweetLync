@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sweet Lync</title>
+        <!-- Style -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- JavaScript -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="app">
+
+        <div class="container">
+
+            <!-- Login Form -->
+            <div class="container appSection" ng-controller="loginCtrl" ng-hide="loggedIn">
+                <form>
+                    <div class="form-group">
+                        <label>Username:</label>
+                        <input type="text" class="form-control" id="loginUsername" ng-model="lusername">
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" class="form-control" id="loginPassword" ng-model="lpassword">
+                    </div>
+                    <button type="button" class="btn btn-primary" ng-click="loginUser()">Login</button>
+                    <button type="button" class="btn">Register</button>
+                </form>
+
+                <div class="container appSection">
+                    Result: {{prd}}
+                </div>
+            </div>
+
+            <!-- User List -->
+            <div class="container appSection" ng-controller="userListCtrl" ng-show="loggedIn">
+                UserList: {{ userList }}
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
