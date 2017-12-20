@@ -1,2 +1,2 @@
 # sweetLync
-SweetLync is a Eletcron/NodeJS alternative to Lync.
+SweetLync is a Eletcron/NodeJS client alternative to Lync, requires SweetLyncServer to function.
