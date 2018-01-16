@@ -1,15 +1,19 @@
 {
   "name": "sweetlync",
   "version": "1.0.0",
-  "description": "Sweet Lync(tm)",
-  "main": "client.js",
+  "description": "SweetLync GUI Client Application",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dabbo07/sweetLync.git"
+  },
   "author": "Darren Edmonds",
   "license": "ISC",
-  "dependencies": {
-    "crypto-js": "^3.1.9-1",
-    "electron": "^1.7.9"
-  }
+  "bugs": {
+    "url": "https://github.com/Dabbo07/sweetLync/issues"
+  },
+  "homepage": "https://github.com/Dabbo07/sweetLync#readme"
 }
