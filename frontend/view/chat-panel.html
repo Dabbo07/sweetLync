@@ -1,0 +1,18 @@
+<div ng-show="selectedChat.alias">
+    <h5>Item: <small>{{selectedChat.alias}}</small></h5>
+    <div class="row" ng-repeat="message in selectedChat.messages">
+        <div class="col-md-4 selectableItem chatUserItem">
+            {{message.username}}
+        </div>
+        <div class="col-md-8 selectableItem chatMessageItem">
+            {{message.entry}}
+        </div>
+    </div>
+</div>
+<div ng-hide="selectedChat.alias" class="container">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center">
+            Select a Conversation
+        </div>
+    </div>
+</div>

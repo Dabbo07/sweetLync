@@ -1,0 +1,49 @@
+.errorPanel {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #ffaaaa;
+    color: #ff0000;
+}
+
+.offlineStatus {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.onlineStatus {
+    font-weight: bold;
+    color: #007700;
+}
+
+.awayStatus {
+    font-weight: bold;
+    font-style: italic;
+    color: #777700;
+}
+
+.listHeader {
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.conversationListItem, .userListItem, .chatMessageItem, .chatUserItem {
+    font-size: 10px;
+}
+
+.chatUserItem {
+    font-weight: bold;
+}
+
+.selectableItem {
+    padding: 2px;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.selectableItem:hover {
+    background-color: #a0ffff;
+}

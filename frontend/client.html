@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="SWEETLYNC">
+    <head>
+        <title>SweetLync v1</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="../frontend/css/client.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+        <script src="../frontend/clientApp.js"></script>
+        <script src="../frontend/directives/directives.js"></script>
+        <script src="../frontend/controller/appController.js"></script>
+        <script src="../frontend/controller/logonController.js"></script>
+        <script src="../frontend/controller/chatController.js"></script>
+    </head>
+    <body>
+        <application-title></application-title>
+        <error-panel ng-hide="applicationError === ''"></error-panel>
+        <login-panel ng-show="loginPanelShow"></login-panel>
+        <navigation-panel ng-hide="loginPanelShow"></navigation-panel>
+    </body>
+</html>

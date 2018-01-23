@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="listHeader">User List</div>
+                </div>
+            </div>
+            <div class="row" ng-repeat="user in userList">
+                <div class="col-md-12">
+                    <div class="userListItem selectableItem">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{user.username}}
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pull-right" style="text-align: right;">
+                                    <span class="offlineStatus" ng-show="user.status === 0">offline</span>
+                                    <span class="onlineStatus" ng-show="user.status === 1">online</span>
+                                    <span class="awayStatus" ng-show="user.status === 2">away</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="listHeader">Conversation List</div>
+                </div>
+            </div>
+            <div class="row" ng-repeat="conv in conversationList">
+                <div class="col-md-12">
+                    <div class="conversationListItem selectableItem" ng-click="conversationListClick(conv)">
+                        {{conv.alias}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-8">
+        <chat-panel></chat-panel>
+    </div>
+</div>
