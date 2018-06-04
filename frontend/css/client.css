@@ -34,8 +34,17 @@
     font-size: 10px;
 }
 
+.chatBox {
+    padding: 5px;
+    border:1px solid black;
+    border-radius: 6px;
+}
 .chatUserItem {
     font-weight: bold;
+}
+
+.chatUsername {
+    padding: 2px;
 }
 
 .selectableItem {

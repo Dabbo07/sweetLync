@@ -4,12 +4,13 @@
     
     var chatController = function($scope, $timeout) {
         $scope.selectedChat = {};
+        $scope.selectedChat.alias = null;
         $scope.selectedChat.messages = [];
 
         var conversationService = require('electron').remote.getGlobal('conversationService');
 
         var conversationListClick = function(conversationObj) {
-            $scope.selectedChat.alias = conversationObj.alias;
+            $scope.selectedChat.alias = conversationObj.conversation_alias;
             conversationService.getConversation(conversationObj, conversationRetrieveFuture);
         };
         $scope.conversationListClick = conversationListClick;
